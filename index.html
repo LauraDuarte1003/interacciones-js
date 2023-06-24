@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <section id="interacciones">
+        <h2>INTERACCIONES Y MANIPULACION DE HTML Y CSS CON JS</h2>
+        <button onclick="circulo()">CIRCULO</button>
+        <button onclick="rectangulo()">RECTANGULO</button>
+        <button onclick="degradado()">DEGRADADO</button>
+        <button onclick="ondas()">ONDAS</button>
+        <button onclick="gif()">GIF</button>
+        <button onclick="rombo()">ROMBO</button>
+        <button onclick="triangulo()">TRIANGULO</button>
+        <button onclick="panel_lateral()">PANEL LATERAL</button>
+        <button onclick="panel_superior()">PANEL SUPERIOR</button>
+        <button onclick="fondo_body()">FONDO</button>
+    </section>
+
+    <section id="cont-figura">
+        <div id="figura"></div>
+    </section>
+
+    <div id="panel_lateral">
+        <button class="close" onclick="panel_lateral()">X</button>
+        <h3>MENU PRINCIPAL</h3>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Ventas</a></li>
+            <li><a href="#">Inventarios</a></li>
+            <li><a href="#">Proveedores</a></li>
+        </ul>
+    </div>
+
+    <section id="panel_superior">
+        <button class="close" onclick="panel_superior()">X</button>
+        <h3>VIDEO</h3>
+        <div id="video_container">
+            <iframe width="300" height="175" src="https://www.youtube.com/embed/iWCenGIIBVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

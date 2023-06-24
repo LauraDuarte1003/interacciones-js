@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 95%;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+    background: url(../img/fondo1.jpg);
+    background-size: cover;
+}
+
+body#body.img_2 {
+    background: url("../img/img_2.jpg");
+    background-size: cover;
+  }
+
+#interacciones {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+#interacciones h2 {
+    font-size: 38px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#interacciones button {
+    background: rgba(135, 138, 202, 0.469);
+    color: black;
+    border-radius: 7px;
+    padding: 8px 12px;
+    border: 1px solid wheat;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 4px;
+    
+}
+
+#cont-figura {
+    width: 80%;
+    margin: 40px auto 0;
+    padding: 30px;
+    background-color: rgba(37, 17, 17, 0.6);
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+#figura {
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    margin: 40px auto;
+    transition: 1s;
+}
+
+#figura.circulo {
+    border-radius: 50%;
+    background: rgb(61, 66, 50);
+    transform: rotate(-360deg);
+}
+
+#figura.rectangulo {
+    width: 600px;
+    height: 150px;
+    background: rgb(169, 152, 210);
+    transform: rotate(-360deg);
+}
+#figura.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid rgb(100, 35, 35);
+    background: transparent;
+    transform: rotate(-360deg);
+  }
+#figura.rombo {
+    width: 300px;
+    height: 300px;
+    background: rgb(17, 44, 104);
+    transform: rotate(45deg);
+  }
+#figura.degradado {
+
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  }
+#figura.ondas {
+    background: radial-gradient(circle, #ff00ff 0%, #00ffff 100%);
+    animation: ondas 2s linear infinite;
+  }
+  
+@keyframes ondas {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  #figura {
+    width: 300px;
+    height: 300px;
+    background: rgb(13, 12, 12);
+    margin: 40px auto;
+    transition: 1s;
+  }
+  
+  #figura img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  
+#panel_lateral {
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    background: #270202f3;
+    z-index: 999;
+    padding-top: 80px;
+    padding-left: 60px;
+    transition: 0.5s;
+}
+
+#panel_lateral.activo {
+    left: 0;
+}
+
+#panel_lateral h3 {
+    color: rgb(252, 250, 250);
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#panel_lateral a {
+    display: block;
+    padding: 20px;
+    width: 220px;
+    background: rgba(173, 154, 241, 0.303);
+    color: azure;
+    margin: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#panel_lateral .close {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: rgb(247, 243, 243);
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}
+
+
+
+#panel_superior {
+    width: 50%;
+    height: 250px;
+    position: fixed;
+    top: 0;
+    left: 350px;
+    background: #270202f3;
+    z-index: 999;
+    padding: 15px;
+    text-align: center;
+    display: none;
+    border-style: dotted ;
+    border-color: aliceblue;
+}
+
+#panel_superior.activo {
+    display: block;
+}
+
+#panel_superior h3 {
+    color: rgb(251, 249, 249);
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#panel_superior .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(248, 246, 246);
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}
+
+#video_container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+    
+    
